@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:puzzle_15_flutter/my_model.dart';
+import 'package:puzzle_15_flutter/model/my_model.dart';
 
 class PuzzleBoardScreen extends StatefulWidget {
   final int number;
@@ -44,7 +44,7 @@ class _PuzzleBoardScreenState extends State<PuzzleBoardScreen> {
     return Scaffold(
       backgroundColor: Colors.yellow,
       appBar: AppBar(
-        title: const Text('15 Puzzle Game'),
+        title: Text("${widget.number} Puzzle Game"),
       ),
       body: Center(
         child: Column(
@@ -122,7 +122,11 @@ class _PuzzleBoardScreenState extends State<PuzzleBoardScreen> {
                 elevation: WidgetStatePropertyAll(4),
               ),
               onPressed: () => restart(),
-              icon: const Icon(Icons.refresh, size: 40, color: Colors.white,),
+              icon: const Icon(
+                Icons.refresh,
+                size: 40,
+                color: Colors.white,
+              ),
             ),
           ],
         ),

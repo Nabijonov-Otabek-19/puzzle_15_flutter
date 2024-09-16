@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:puzzle_15_flutter/home_screen.dart';
+import 'package:puzzle_15_flutter/screens/home_screen.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

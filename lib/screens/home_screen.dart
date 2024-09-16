@@ -19,6 +19,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       backgroundColor: Colors.yellow,
+      appBar: AppBar(
+        actions: [
+          IconButton(
+            onPressed: () {
+              //
+            },
+            icon: const Icon(
+              Icons.settings,
+              size: 30,
+              color: Colors.black,
+            ),
+          ),
+        ],
+      ),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
