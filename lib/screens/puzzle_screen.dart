@@ -30,6 +30,13 @@ class _PuzzleBoardScreenState extends State<PuzzleBoardScreen> {
   }
 
   @override
+  void dispose() {
+    cubit.stopTimer();
+    cubit.close();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     width = MediaQuery.sizeOf(context).width;
     height = MediaQuery.sizeOf(context).height;
